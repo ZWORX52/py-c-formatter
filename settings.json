@@ -1,0 +1,38 @@
+{
+    "cs50_default": {
+        "newlines_before_curly_brackets": true,
+        "spaces_before_parenthesis": false,
+        "spaces_before_square_brackets": false,
+        "spaces_between_function_parameters": true,
+        "spaces_around_equals": true,
+        "spaces_around_comparisons": true,
+        "spaces_after_ampersands": false,
+        "spaces_in_include_statements": true,
+        "spaces_around_operations": true,
+        "spaces_before_double_operators": false,
+        "spaces_after_*'s": false,
+        "spaces_before_*'s": true,
+        "spaces_after_control_statements": true,
+        "spaces_around_logical_operators": true,
+        "indentation_spaces": 4,
+        "lines_between_functions": 2
+    },
+    "inverted": {
+        "newlines_before_curly_brackets": false,
+        "spaces_before_parenthesis": true,
+        "spaces_before_square_brackets": true,
+        "spaces_between_function_parameters": false,
+        "spaces_around_equals": false,
+        "spaces_around_comparisons": false,
+        "spaces_after_ampersands": true,
+        "spaces_in_include_statements": false,
+        "spaces_around_operations": false,
+        "spaces_before_double_operators": true,
+        "spaces_after_*'s": true,
+        "spaces_before_*'s": false,
+        "spaces_after_control_statements": false,
+        "spaces_around_logical_operators": false,
+        "indentation_spaces": 2,
+        "lines_between_functions": 1
+    }
+}
