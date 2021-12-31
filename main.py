@@ -3,7 +3,21 @@ from typing import Union
 from compact import compact
 from expand import expand
 
-import colorama as col
+try:
+    import colorama as col
+except ModuleNotFoundError:
+    # Colorama don exist right now, I'll make everything an empty sting
+    class col:
+        class Fore:
+            YELLOW = ""
+            BLUE = ""
+            LIGHTRED_EX = ""
+            RED = ""
+            GREEN = ""
+
+        class Style:
+            RESET_ALL = ""
+
 import os
 import sys
 import json
@@ -14,7 +28,6 @@ settings = {
     "spaces_before_parenthesis": False,
     "spaces_before_square_brackets": False,
     "spaces_between_function_parameters": True,
-    "spaces_after_conditionals": True,
     "spaces_around_equals": True,
     "spaces_around_comparisons": True,
     "spaces_after_ampersands": False,
@@ -23,6 +36,8 @@ settings = {
     "spaces_before_double_operators": False,
     "spaces_after_*'s": False,
     "spaces_before_*'s": True,
+    "spaces_after_control_statements": True,
+    "spaces_around_logical_operators": True,
     "indentation_spaces": 4,
     "lines_between_functions": 2
 }
@@ -41,7 +56,7 @@ def main(infile=None):
           f"  - Pointer dereferences\n"
           f"  - Smarter asterix handling\n"
           f"  - 'for' loop recognition\n"
-          f"  - Any assignment operator that's not /=, *=, -= or +="
+          f"  - Any assignment operator that's not /=, *=, -= or +=\n"
           f"  - a ? b : c type statements{col.Style.RESET_ALL}")
 
     debug = input(f"{col.Fore.BLUE}Enable debug mode? ONLY ANSWER YES IF YOU ARE TESTING OR DEVELOPING THE PROGRAM!"
