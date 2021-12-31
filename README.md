@@ -2,10 +2,6 @@
 
 A formatter for C code, (badly) written in Python. Uses [colorama](https://pypi.org/project/colorama/) for coloring.
 
-## Note
-
-The colorama Python library is required for this to run as of now as I use it to color my outputs. It should be cross-platform
-
 --------------------------------------------------------------------------------
 
 ## Syntax
